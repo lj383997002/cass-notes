@@ -1,6 +1,6 @@
 # JavaScript Study Notes
 
-{% file src=".gitbook/assets/base.jpg" caption="notes" %}
+![write notes](.gitbook/assets/base.jpg)
 
 ### **个人笔记 - JavaScript** 
 
@@ -10,7 +10,7 @@
 * 经常回忆和复习学习内容
 * 将所有零碎知识重组, 建立知识体系, 通过结构点去寻找知识
 
-## 文档
+### 文档
 
 * \[浏览器基本工作原理\]\([https://cass-notes.netlify.com/browser](https://cass-notes.netlify.com/browser)\)
 * \[Javascript执行机制\]\([https://cass-notes.netlify.com/execute](https://cass-notes.netlify.com/execute)\)
