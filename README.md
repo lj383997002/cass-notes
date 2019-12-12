@@ -1,4 +1,6 @@
-# Initial page
+---
+description: 个人学习笔记
+---
 
-test
+# JavaScript Study Notes
 
