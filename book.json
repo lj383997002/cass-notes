@@ -3,11 +3,11 @@
   "plugins": ["edit-link", "github"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/lj383997002/cass-notes",
+      "base": "https://github.com/lj383997002/cass-notes/tree/master",
       "label": "开始纠错"
     },
     "github": {
-      "url": "https://github.com/lj383997002/cass-notes/tree/master"
+      "url": "https://github.com/lj383997002/cass-notes"
     },
     "sharing": {
       "facebook": true,
