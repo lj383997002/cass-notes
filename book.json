@@ -1,0 +1,20 @@
+{
+  "title": "Cass-notes",
+  "plugins": ["edit-link", "github"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/lj383997002/cass-notes",
+      "label": "开始纠错"
+    },
+    "github": {
+      "url": "https://github.com/lj383997002/cass-notes"
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": true,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false
+    }
+}
