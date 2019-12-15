@@ -1,3 +1,14 @@
 {
-    "plugins": ["hints"]
+  "title": "Redux-Saga",
+  "plugins": ["edit-link", "prism@1.0.0", "github", "hints"],
+  "pluginsConfig": {
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": true,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false
+    }
+  }
 }
