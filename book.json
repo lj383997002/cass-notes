@@ -1,5 +1,5 @@
 {
-  "title": "Redux-Saga",
+  "title": "Cass-notes",
   "plugins": ["edit-link", "prism@1.0.0", "github", "hints"],
   "pluginsConfig": {
     "sharing": {
