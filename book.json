@@ -1,3 +1,4 @@
 {
-  "title": "Cass-notes"
+  "title": "Cass-notes",
+  "plugins": ["github", "hints"]
 }
