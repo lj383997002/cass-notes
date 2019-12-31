@@ -1,11 +1,3 @@
 {
-  "title": "Cass-notes",
-  "plugins": ["github", "hints"],
-  "pluginsConfig": {
-    "sharing": {
-      "facebook": true,
-      "twitter": true,
-      "google": true
-    }
-  }
+  "title": "Cass-notes"
 }
