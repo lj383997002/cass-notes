@@ -3,7 +3,7 @@
   "plugins": ["edit-link", "prism@1.0.0", "github", "hints"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/lj383997002/cass-notes",
+      "base": "https://github.com/lj383997002/cass-notes/tree/master",
       "label": "开始纠错"
     },
     "github": {
