@@ -2,6 +2,10 @@
   "title": "Cass Notes",
   "plugins": ["edit-link", "prism@1.0.0", "github", "hints"],
   "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/lj383997002/cass-notes",
+      "label": "Edit This Page"
+    },
     "sharing": {
       "facebook": true,
       "twitter": true,
