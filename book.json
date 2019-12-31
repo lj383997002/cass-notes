@@ -1,14 +1,11 @@
 {
   "title": "Cass-notes",
-  "plugins": ["edit-link", "prism@1.0.0", "github", "hints"],
+  "plugins": ["github", "hints"],
   "pluginsConfig": {
     "sharing": {
       "facebook": true,
       "twitter": true,
       "google": true,
-      "weibo": true,
-      "instapaper": false,
-      "vk": false
     }
   }
 }
