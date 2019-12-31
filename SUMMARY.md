@@ -7,6 +7,6 @@
 * [浏览器基本工作原理](browser/README.md)
   * [浏览器进程架构](browser/browser-process.md)
 * [Webpack](webpack/README.md)
-  * [Webpack Loader 原理解析](webpack/webpack-loader-yuan-li-jie-xi/README.md)
-    * [style-loader 源码分析](webpack/webpack-loader-yuan-li-jie-xi/styleloader-yuan-ma-fen-xi.md)
+  * [Webpack Loader 原理解析](webpack/loader-runner-sourcecode/README.md)
+    * [style-loader 源码分析](webpack/loader-runner-sourcecode/style-loader-sourcecode.md)
 
