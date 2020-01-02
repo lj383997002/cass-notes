@@ -1,6 +1,6 @@
 {
   "title": "Cass Notes",
-  "plugins": ["edit-link", "prism@1.0.0", "github", "hints"],
+  "plugins": ["edit-link", "prism@1.0.0", "github", "-highlight", "hints"],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/lj383997002/cass-notes/tree/master",
