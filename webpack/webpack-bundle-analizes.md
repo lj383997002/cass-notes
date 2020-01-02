@@ -346,3 +346,31 @@ function webpackJsonpCallback(data) {
 
 webpackJsonpCallback 执行完毕后，调用栈回到了 main.js 中，此时才会去真正执行 test.js 中的代码。在**webpack\_require**.e\(0\).then\(**webpack\_require**.bind\(null, ‘./src/test.js’\)\) 中，可以看到通过**webpack\_require**去加载 test.js, 之后的流程与初始化 main.js 是一样的。至此，整个动态加载异步模块的包文件分析完毕。
 
+### 3. 配置 webpack.optimization.runtime 
+
+上述配置项配置后，会将依赖文件与包文件分离，生成 runtime 运行时文件。 此时打包后的文件与上述两种方法大致相同，主要多了 **checkDeferredModules** 方法，此方法比较简单。
+
+```text
+function checkDeferredModules() {
+  // 取出加载文件列表, 并且判断需要执行的js的依赖项是否加载完毕
+  // 如果没有则跳过, 等到依赖项加载完成后再执行
+  // eg: deferredModule = ['./src/main.js', 'runtime~main'], 如果需要加载 main.js, 此时 runtime~main 依赖项需要加载完成
+	var result;
+	for(var i = 0; i < deferredModules.length; i++) {
+		var deferredModule = deferredModules[i];
+		var fulfilled = true;
+		for(var j = 1; j < deferredModule.length; j++) {
+			var depId = deferredModule[j];
+			if(installedChunks[depId] !== 0) fulfilled = false;
+		}
+		if(fulfilled) {
+			deferredModules.splice(i--, 1);
+			result = __webpack_require__(__webpack_require__.s = deferredModule[0]);
+		}
+	}
+	return result;
+}
+```
+
+综合上述三种方案，webpack基础打包文件分析已经完成，如果需要添加其他配置项，添加后分析即可。
+
