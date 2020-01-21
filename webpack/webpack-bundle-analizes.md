@@ -10,7 +10,7 @@ webpack 实现了 \_\_webpack\_require\_\_ 方法，相当于 Node 中的 requir
 
 入口文件比较简单，没有动态导入等操作。
 
-```text
+```javascript
 // webpack.config.js
 const path = require('path')
 module.exports = {
@@ -37,7 +37,7 @@ export { render }
 
 根据上述代码，执行 **webpack --mode=development** 命令后，可得出下述 bundle.js
 
-```text
+```javascript
  (function(modules) {
   // 缓存的模块
  	var installedModules = {};
@@ -350,7 +350,7 @@ webpackJsonpCallback 执行完毕后，调用栈回到了 main.js 中，此时�
 
 上述配置项配置后，会将依赖文件与包文件分离，生成 runtime 运行时文件。 此时打包后的文件与上述两种方法大致相同，主要多了 **checkDeferredModules** 方法，此方法比较简单。
 
-```text
+```javascript
 function checkDeferredModules() {
   // 取出加载文件列表, 并且判断需要执行的js的依赖项是否加载完毕
   // 如果没有则跳过, 等到依赖项加载完成后再执行
